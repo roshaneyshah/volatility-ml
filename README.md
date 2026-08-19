@@ -11,6 +11,9 @@ Time series forecasting library for volatility and price prediction.
 - ARIMA price forecasting
 - Ensemble forecasting
 
+## Key finding
+Walk-forward validation revealed that every point-forecast model in this library was systematically overconfident when evaluated on calibration rather than accuracy alone. Refitting on expanding windows and checking calibration against held-out volatility regimes consistently exposed overconfidence that accuracy metrics masked.
+
 ## Installation
 pip install forecasting-models
 
